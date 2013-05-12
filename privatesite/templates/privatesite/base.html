@@ -1,0 +1,10 @@
+{% extends 'admin:admin/base_site.html' %}
+
+{% load i18n %}
+
+{% block title %}{{ block.super}} | Custom Edition{% endblock %}
+
+{% block branding %}
+{{ block.super }}
+<h2>{% trans 'Custom Edition' %}</h2>
+{% endblock %}
