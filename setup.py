@@ -22,7 +22,7 @@ setup(
     author='Victor Safronovich',
     author_email='vsafronovich@gmail.com',
     license='MIT',
-    url='http://github.com/suvitorg/django-privatesite',
+    url='http://github.com/suvit/django-privatesite',
     zip_safe=False,
     packages=find_packages(exclude=['docs', 'examples', 'tests']),
     install_requires=['django>=1.3',
