@@ -56,7 +56,7 @@ in urls.py
 
 And go to see, whats happen.
 
-In template you may user
+In template you may use
 
     {% url 'site1:myapp_car_changeview' %}
     {% url 'site2:myapp_car_change' car_id %}
@@ -70,5 +70,4 @@ TODO
 ------
 
 * don`t work with django-admin-tools now (fix in near future)
-* write docs
 * write tests
