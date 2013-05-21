@@ -58,10 +58,10 @@ And go to see, whats happen.
 
 In template you may user
 
-  {% url 'site1:myapp_car_changeview' %}
-  {% url 'site2:myapp_car_change' car_id %}
+   {% url 'site1:myapp_car_changeview' %}
+   {% url 'site2:myapp_car_change' car_id %}
 
-  {% url 'personal:myapp_human_history' human_id %}
+   {% url 'personal:myapp_human_history' human_id %}
 
 If you want to add custom views, use this helper
 https://github.com/ionelmc/django-admin-utils
