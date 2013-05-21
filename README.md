@@ -20,10 +20,23 @@ BENEFITS
 INSTALLATION
 ------------------
 
-   pip install django-privatesite
+Install from pypi, with pip::
 
+    pip install django-privatesite
+
+
+Add ``private`` to ``INSTALLED_APPS``::
+
+    INSTALLED_APPS = ("privatesite", ) + ('django.contrib.admin', ...)
+    
+Please note, that ``privatesite`` app must be upper
+then ``django.contrib.admin app`` in ``INSTALLED_APPS`` list
+to overload ``admin/base_site.html`` template
+    
 USAGE
 ------------
+
+.. code-block:: python
 
     from privatesite.admin import CustomAdminSite
 
@@ -37,6 +50,8 @@ USAGE
     personal = CustomAdminSite(name="personal", app_name="admin")
 
 register models now
+
+.. code-block:: python
 
     from myapp.models import Car, Animal, Human
 
