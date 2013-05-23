@@ -4,7 +4,7 @@ django-privatesite
 Django custom admins.
 Don`t reinvent the bicycle and use django.contrib.admin everywhere.
 
-[![Downloads](https://pypip.in/d/django-privatesite/badge.png)](https://crate.io/package/django-privatesite)
+[![Downloads](https://pypip.in/d/django-privatesite/badge.png)](https://crate.io/packages/django-privatesite)
 
 BENEFITS
 --------------------------------
