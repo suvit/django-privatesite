@@ -4,6 +4,8 @@ django-privatesite
 Django custom admins.
 Don`t reinvent the bicycle and use django.contrib.admin everywhere.
 
+[![Downloads](https://pypip.in/d/django-privatesite/badge.png)](https://crate.io/package/django-privatesite)
+
 BENEFITS
 --------------------------------
 
@@ -36,8 +38,6 @@ to overload ``admin/base_site.html`` template
 USAGE
 ------------
 
-.. code-block:: python
-
     from privatesite.admin import CustomAdminSite
 
     site1 = CustomAdminSite(name="site1", app_name="admin")
@@ -50,8 +50,6 @@ USAGE
     personal = CustomAdminSite(name="personal", app_name="admin")
 
 register models now
-
-.. code-block:: python
 
     from myapp.models import Car, Animal, Human
 
