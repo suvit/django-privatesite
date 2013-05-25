@@ -6,7 +6,7 @@ Don`t reinvent the bicycle and use django.contrib.admin everywhere.
 
 [![Downloads](https://pypip.in/d/django-privatesite/badge.png)](https://crate.io/packages/django-privatesite)
 
-BENEFITS
+BENEFITS of django.contrib.admin
 --------------------------------
 
 * Used access control from django.contrib.admin
@@ -20,14 +20,14 @@ BENEFITS
 * Widgets for dates, raw id field
 
 INSTALLATION
-------------------
+------------
 
 Install from pypi, with pip::
 
     pip install django-privatesite
 
 
-Add ``private`` to ``INSTALLED_APPS``::
+Add ``privatesite`` to ``INSTALLED_APPS``::
 
     INSTALLED_APPS = ("privatesite", ) + ('django.contrib.admin', ...)
     
