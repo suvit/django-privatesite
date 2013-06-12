@@ -24,3 +24,32 @@ class CustomAdminSite(AdminSite):
 class CustomModelAdmin(ModelAdmin):
     """ DO custom things here.
     """
+
+
+class MyModelAdmin(CustomModelAdmin):
+
+    readonly = False
+
+    def queryset(self, request):
+        return super(MyModelAdmin, self).queryset(request)\
+                                        .filter(user=request.user)
+
+    def save_model(self, request, obj, form, change):
+        if not obj.user:
+            obj.user = request.user
+        obj.save()
+
+    def has_add_permission(self, request):
+        return not self.readonly
+
+    def has_change_permission(self, request, obj=None):
+        if obj is None:
+            return True
+
+        return obj.user == request.user
+
+    def has_delete_permission(self, request, obj=None):
+        if obj is None:
+            return not self.readonly
+
+        return obj.user == request.user
