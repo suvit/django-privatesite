@@ -1,2 +1,3 @@
 recursive-include privatesite/templates *
 include README.md
+include LICENSE
